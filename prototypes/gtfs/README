@@ -1,0 +1,13 @@
+These scripts are for moving gtfs distributions into a MySQL database.
+
+Create the schema:
+
+    > mysql -uuser -ppassword database < gtfs.sql
+
+Import a gtfs distribution:
+
+    Download the distribution
+    Unzip it
+    > cd /dist/dir
+    > php /path/to/here/import.sql.php | mysql -uuser -ppassword database
+ 
